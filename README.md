@@ -17,21 +17,12 @@ Install ava globally
 $ npm install ava -g
 ```
 
-Install selenium-standalone (NOTE: You need a JVM for this)
+Install selenium-standalone (NOTE: You need a JVM for this), then install
+the browser drivers and start the selenium server
 
 ```console
 $ npm install selenium-standalone -g
-```
-
-Install drivers
-
-```console
 $ selenium-standalone install
-```
-
-Start selenium server
-
-```console
 $ selenium-standalone start
 ```
 
