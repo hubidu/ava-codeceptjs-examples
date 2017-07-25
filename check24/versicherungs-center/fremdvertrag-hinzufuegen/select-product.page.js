@@ -15,10 +15,9 @@ class SelectProductPage {
   }
 
   async selectProduct(insuranceProduct) {
-    // await I.seeElement('.ProductsSelection');
     await this.I.click({ css: 'button[data-test-key="' + insuranceProduct + '"]' });
-    // await I.wait(2)
-
+    await this.I.waitInUrl('/versicherungsordner/vertraege/neu/insurance')
+    
     return new SelectInsuranceCompanyPage(this.I)
   }
 }
