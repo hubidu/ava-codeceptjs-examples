@@ -1,6 +1,6 @@
 const { test, scenario } = require('ava-codeceptjs')
 
-const RechtsschutzPage = require('./rechtsschutz.page')
+const RechtsschutzPage = require('./_rechtsschutz.page')
 
 test('Find a Rechtsschutzversicherung', async t => {
     const { I } = t.context

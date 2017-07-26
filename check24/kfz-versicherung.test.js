@@ -1,6 +1,6 @@
 const { test, scenario } = require('ava-codeceptjs')
 
-const KfzPageModel = require('./kfz.page-model')
+const KfzPageModel = require('./_kfz.page-model')
 
 // TODO Add a test with quotes
 test('Go to the "KFZ page"', async t => {
