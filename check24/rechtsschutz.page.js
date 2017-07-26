@@ -13,11 +13,12 @@ class Check24RechtsschutzPage {
 
     async clickOnErgebnisseAnzeigen() {
         await this.I.click({css: 'a#c24-input1-submitbutton'})
+        await this.I.waitInUrl('/vergleichsergebnis')
     }
 
     async seeInsurances(numberOfElements) {
-        await this.I.waitForText('Ihr Rechtsschutz-Vergleich')
-        await this.I.waitForElement('div.consultant_pictureContainer')
+        await this.I.see('Ihr Rechtsschutz-Vergleich', 'h1')        
+        await this.I.seeElementInDOM('div.consultant_pictureContainer')
         await this.I.seeNumberOfElements('div.result_box', numberOfElements)
     }
 
