@@ -1,7 +1,7 @@
 const { scenario } = require('ava-codeceptjs')
 const devices = require('../../../devices.js')
 
-const SelectProductPage = require('./select-product.page')
+const SelectProductPage = require('./_select-product.page')
 
 const login = async (I, user, password) => {
     await I.amOnPage('https://kundenbereich.check24.de/user/account.html?o=overview')

@@ -1,4 +1,4 @@
-const SelectInsuranceCompanyPage = require('./select-insurance-company.page')
+const SelectInsuranceCompanyPage = require('./_select-insurance-company.page')
 
 class SelectProductPage {
   constructor(actor) {

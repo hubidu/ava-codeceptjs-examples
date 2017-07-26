@@ -19,9 +19,9 @@ class SelectInsurancePage {
   }
 
   async seeInsurance(insuranceCompanies) {
-    insuranceCompanies.forEach(async insurance => 
-        await this.I.see(insurance)
-    );
+    for (let insuranceCorp of insuranceCompanies) {
+      await this.I.see(insuranceCorp)
+    }
   }
 
   async select(insuranceCompany) {
